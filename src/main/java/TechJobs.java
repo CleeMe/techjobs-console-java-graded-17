@@ -1,3 +1,4 @@
+import javax.print.attribute.HashPrintJobAttributeSet;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -119,21 +120,21 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-        for(HashMap <String, String> job : someJobs){
-            for (Map.Entry <String, String> jobColumn : job.entrySet()){
-                System.out.println("*****\n" + jobColumn.getKey() + ": " + jobColumn.getValue()
-                        + "*****\n\n");
-            }
-        }
-
-
-//    Map<String, String> map = new HashMap<>();
-//    for (Map.Jobs<String, String> entry : Map.entrySet()) {
-//        System.out.println(someJobs.getKey() + ": " + someJobs.getValue());
-//    }
-//
+//        for(HashMap <String, String> jobs : someJobs){
+//            for (Map.Entry <String, String> jobsColumn : jobs.entrySet()){
+//                System.out.println("\n*****\n" + jobsColumn.getKey() + ": " + jobsColumn.getValue() +
+//                        + "\n*****\n");
+//            }
 //        }
+
+
+    for (HashMap<String, String> map = new HashMap<>();
+        for (Map.Jobs<String, String> entry : Jobs.entrySet()) {
+            System.out.println(someJobs.getKey() + ": " + someJobs.getValue());
+        }
+        }
         System.out.println(someJobs);
 
-    }
+
+}
 }
