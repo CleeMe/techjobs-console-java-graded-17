@@ -63,9 +63,11 @@ public class TechJobs {
                 String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
-                    printJobs(JobData.findByValue(searchTerm));
+                    ArrayList<HashMap<String, String>> matchingJobs = JobData.findByValue(searchTerm);
+                           printJobs(matchingJobs);
                 } else {
-                    printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
+                    ArrayList<HashMap<String, String>> matchingJobs = JobData.findByColumnAndValue(searchField, searchTerm);
+                    printJobs(matchingJobs);
                 }
             }
         }
